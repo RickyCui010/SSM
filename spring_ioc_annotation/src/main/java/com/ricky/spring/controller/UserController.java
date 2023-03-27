@@ -15,8 +15,8 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class UserController {
 
-    @Autowired
-    @Qualifier("userServiceImpl")
+    @Autowired(required = false)
+//    @Qualifier("userServiceImpl")
     private UserService userService;
 
 
